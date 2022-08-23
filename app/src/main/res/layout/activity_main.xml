@@ -6,13 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
+        <TextView
+            android:id="@+id/textViewPrimeiroNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Primeiro número:"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/editTextPrimeiroNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textViewSegundoNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Segundo número:"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/editTextSegundoNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btn_somar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="soma"
+            android:text="SOMAR" />
+
+        <Button
+            android:id="@+id/btn_subtrair"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="subtracao"
+            android:text="SUBTRAIR" />
+
+        <Button
+            android:id="@+id/btn_multiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="multiplicacao"
+            android:text="MULTIPLICAR" />
+
+        <Button
+            android:id="@+id/btn_dividir"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="divisao"
+            android:text="DIVIDIR" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESULTADO:"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="34sp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
